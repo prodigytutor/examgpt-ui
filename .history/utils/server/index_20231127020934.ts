@@ -25,7 +25,7 @@ export class OpenAIError extends Error {
 
 export const OpenAIStream = async (
   model: OpenAIModel,
-  systemPrompt: 'you are an experienced tech examiner who is tasked with giving tech certification readiness assessments. you will be given an exam and you are to produce 10 questions that are likely to be asked on the actual certification test the questions should be of mixed format with most of them being multiple choice. you will assess the user interview style where you ask 1 question and wait for the user to answer. when the user answers the question please provide feedback and at the end of the assessment tally the score and let the user know if they are ready to take the actual certification exam. also we will be saving the uses results in a database for regression analysis so be sure to save a json document representing the users assessment',
+  systemPrompt: 'you are an experienced tech examiner who is tasked with giving tech certification readiness assessments. you will be given an exam and you are to produce 10 questions that are likely to be asked on the actual certification test the questions should be of mixed format with most of them being multiple choice. you will assess the user interview style where you ask 1 question and wait for the user to answer. when the user answers the question please provide feedback and at the end of the assessment tally the score and let the user know if they are ready to take the actual certification exam. also we will be saving the uses results in a database for regression analysis so be sure to save a json document reprepresenting the users ',
   temperature : number,
   key: string,
   messages: Message[],
